@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RentCar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/shark</item>
+        <item name="colorAccent">@color/broom</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Theme.RentCar" parent="Base.Theme.RentCar" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Set the splash screen background, animated icon, and animation duration. -->
+        <item name="windowSplashScreenBackground">?attr/colorPrimary</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an
+             animated drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_user</item>
+        <!-- Required for animated icons -->
+        <item name="windowSplashScreenAnimationDuration">100</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash screen. -->
+        <!-- Required -->
+        <item name="postSplashScreenTheme">@style/Theme.RentCar</item>
+    </style>
+</resources>
